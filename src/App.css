@@ -1,1 +1,93 @@
+/* Write your CSS in*/
+
+* {
+    box-sizing: border-box;  
+    margin: 0; 
+
+}
+
+/*
+
+---PAGE ONE: LIST OF CARDS (ARTCLE CARD.JS AND LIST.JS)---
+
+*/ 
+
+.pageWrapper {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 25px;
+    width: 100%; 
+}
+
+.pageWrapper > h1 {
+    font-size: 64px; 
+    font-weight: 400; 
+}
+
+/* Working on the general code for each card */ 
+.articleCard {
+    display: flex; 
+    border: 1px solid; 
+    height: 200px; 
+    padding: 10px; 
+    margin: 25px 0 25px 0; 
+
+}
+
+.textWrapper {
+    display:flex;
+    flex-direction: column;
+    flex-basis: 60%;
+    margin-left: 40px; 
+
+}
+
+.textWrapper >h2 {
+    font-size: 32px; 
+}
+
+/* Giving each item in textWrapper somme space on the bottom */
+.item {
+    margin-bottom: 10px;
+}
+
+/* Working on the image */ 
+.imageWrapper {
+    background-color: grey; 
+    display: flex; 
+    flex-basis: 30%;
+    height: auto; 
+    width: 100%;  
+}
+
+
+/* 
+
+---PAGE 2: ARTICLE PAGE (ARTICLE.JS)---
+
+*/ 
+
+.headerSection {
+    display: flex; 
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Grey_background.jpg/1200px-Grey_background.jpg");
+    padding: 40px 25px; 
+    flex-direction: column; 
+}
+
+.headerText {
+    margin: 0 auto;
+    width: 100%; 
+    max-width: 824px; 
+}
+
+.headerText> h1 {
+    font-size: 64px; 
+    font-weight: 400; 
+}
+
+.headerBlurb {
+    font-size: 18px;
+    padding-top: 10px;
+}
+
 
