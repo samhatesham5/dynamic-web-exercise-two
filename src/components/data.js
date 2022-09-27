@@ -213,3 +213,11 @@ export default [{}];
 It's more concise. 
 
 */
+
+
+Array.map ((item,index) => {
+    return item;
+
+}
+
+)
