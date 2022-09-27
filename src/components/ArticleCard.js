@@ -9,12 +9,12 @@ function ArticleCard( {imageAlt, imageSrc, blurb, date, title} ){
     return(
         <div className="articleCard">
             <div className="imageWrapper"> 
-                <img src="" alt="" />
+                <img src={imageSrc} alt={imageAlt} />
             </div> 
             <div className="textWrapper">
-                <h2 className="item header">Header 2</h2>
-                <p className="item date">date</p> 
-                <p className="item blurb">blurb</p> 
+                <h2 className="item header">{title}</h2>
+                <p className="item date">{date}</p> 
+                <p className="item blurb">{blurb}</p> 
                 <div className="item textLink"> 
                     <a href="#">link</a> 
                 </div> 

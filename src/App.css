@@ -24,7 +24,10 @@
     font-weight: 400; 
 }
 
-/* Working on the general code for each card */ 
+/* Working on the general code for each card 
+    - FIX THE HEIGHT
+
+*/ 
 .articleCard {
     display: flex; 
     border: 1px solid; 
@@ -34,6 +37,7 @@
 
 }
 
+/* Try to wrap the text*/
 .textWrapper {
     display:flex;
     flex-direction: column;
@@ -69,7 +73,6 @@
 
 .headerSection {
     display: flex; 
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Grey_background.jpg/1200px-Grey_background.jpg");
     padding: 40px 25px; 
     flex-direction: column; 
 }

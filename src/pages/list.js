@@ -3,6 +3,8 @@
 import React from "react"; 
 //Going back one directory (we're in pages folder, and get to components then article)
 import ArticleCard from "../components/ArticleCard.js";
+//Importing our JSON data
+import Data from "../components/data.js";
 
 //Writting a function, list(), that returns HTML (or what looks like it)
 function List(){
@@ -10,7 +12,22 @@ function List(){
         <main>
             <section className="pageWrapper"> 
                 <h1>Articles</h1>
-                <ArticleCard /> 
+                {/*So we're pulling data from Data*/}
+                {Data.map((article,i) => (
+                        <ArticleCard 
+                        //Using article
+                        blurb = {article.blurb}
+                        date = {article.publishedDate}
+                        imageAlt= {article.image.alt}
+                        imageSrc = {article.image.url}
+                        title = {article.title}
+                        /> 
+                     )
+                
+                
+                )};
+
+
             </section> 
         </main> 
     ); 
