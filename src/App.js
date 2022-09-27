@@ -23,7 +23,7 @@ const router = createBrowserRouter([
   {
     //Basically, when you type in this path, you'll be redirected to another page
     //To see if it works type /article after the url
-    path: "/article",
+    path: "/article/:id",
     element: <Article />,
   },
 ]);

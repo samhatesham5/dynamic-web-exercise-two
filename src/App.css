@@ -25,13 +25,15 @@
 }
 
 /* Working on the general code for each card 
-    - FIX THE HEIGHT
+
+    --Try to fix wrapping the text when squished
+    --Fix height so it's dynamic
 
 */ 
 .articleCard {
     display: flex; 
     border: 1px solid; 
-    height: 200px; 
+    height: 250px; 
     padding: 10px; 
     margin: 25px 0 25px 0; 
 
@@ -46,13 +48,18 @@
 
 }
 
-.textWrapper >h2 {
+.textWrapper > h2 {
     font-size: 32px; 
 }
 
-/* Giving each item in textWrapper somme space on the bottom */
+/* Giving each item in textWrapper some extra space 
+
+    --Try to fix the last child's spacing
+
+*/
+
 .item {
-    margin-bottom: 10px;
+    padding: 10px;
 }
 
 /* Working on the image */ 

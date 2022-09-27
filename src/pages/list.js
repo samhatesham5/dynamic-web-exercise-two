@@ -12,7 +12,7 @@ function List(){
         <main>
             <section className="pageWrapper"> 
                 <h1>Articles</h1>
-                {/*So we're pulling data from Data*/}
+                {/*So we're pulling data from Data but it kinda loops through each object by using Map*/}
                 {Data.map((article,i) => (
                         <ArticleCard 
                         //Using article
@@ -21,6 +21,7 @@ function List(){
                         imageAlt= {article.image.alt}
                         imageSrc = {article.image.url}
                         title = {article.title}
+                        id = {article.id}
                         /> 
                      )
                 

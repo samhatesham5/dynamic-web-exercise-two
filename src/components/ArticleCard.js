@@ -3,9 +3,10 @@ import React from "react";
 
 //To ingest JSON, you can pass data from the file into this function, Article card
     //So we can use it
+    //So we pass the keys from list.js into this function (Essentially importing it)
 
 //We'll go over link a bit later
-function ArticleCard( {imageAlt, imageSrc, blurb, date, title} ){
+function ArticleCard( {id, imageAlt, imageSrc, blurb, date, title} ){
     return(
         <div className="articleCard">
             <div className="imageWrapper"> 
@@ -16,7 +17,7 @@ function ArticleCard( {imageAlt, imageSrc, blurb, date, title} ){
                 <p className="item date">{date}</p> 
                 <p className="item blurb">{blurb}</p> 
                 <div className="item textLink"> 
-                    <a href="#">link</a> 
+                    <a href={`/article/${id}`}>Read More</a> 
                 </div> 
             </div> 
         </div>
