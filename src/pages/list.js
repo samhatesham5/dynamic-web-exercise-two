@@ -16,17 +16,18 @@ function List(){
                 {Data.map((article,i) => (
                         <ArticleCard 
                         //Using article
-                        blurb = {article.blurb}
-                        date = {article.publishedDate}
-                        imageAlt= {article.image.alt}
-                        imageSrc = {article.image.url}
-                        title = {article.title}
-                        id = {article.id}
+                        key={i}
+                        blurb={article.blurb}
+                        date={article.publishedDate}
+                        imageAlt={article.image.alt}
+                        imageSrc={article.image.url}
+                        title={article.title}
+                        id={article.id}
                         /> 
                      )
                 
                 
-                )};
+                )}
 
 
             </section> 

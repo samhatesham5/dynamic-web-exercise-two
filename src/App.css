@@ -23,19 +23,14 @@
     font-size: 64px; 
     font-weight: 400; 
 }
-
-/* Working on the general code for each card 
-
-    --Try to fix wrapping the text when squished
-    --Fix height so it's dynamic
-
-*/ 
+ 
 .articleCard {
     display: flex; 
     border: 1px solid; 
     height: 250px; 
     padding: 10px; 
-    margin: 25px 0 25px 0; 
+    margin: 25px; 
+    overflow: hidden;        /*So far I'm just hidding the text if it overflows*/
 
 }
 
@@ -64,8 +59,8 @@
 
 /* Working on the image */ 
 .imageWrapper {
+    display: flex;
     background-color: grey; 
-    display: flex; 
     flex-basis: 30%;
     height: auto; 
     width: 100%;  
@@ -84,20 +79,33 @@
     flex-direction: column; 
 }
 
+/* Container with our words */
 .headerText {
     margin: 0 auto;
     width: 100%; 
     max-width: 824px; 
 }
 
-.headerText> h1 {
+/*Tackling the first header*/
+.headerText > h1 {
     font-size: 64px; 
     font-weight: 400; 
 }
 
-.headerBlurb {
-    font-size: 18px;
-    padding-top: 10px;
+/*Tackling the blurb and the date */
+.headerBlurb, .headerText > p {
+    font-size: 20px;
+    padding: 10px;
+}
+
+/*Giving the text some margin*/ 
+
+.articleBody {
+    margin: 50px 150px; 
+}
+
+.articleBody > p, .articleBody > h2 {
+    padding-bottom: 20px; 
 }
 
 
